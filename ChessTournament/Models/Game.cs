@@ -83,11 +83,14 @@ namespace ChessTournament.Models
             {
                 Console.WriteLine($"{ _whitePlayer.Name} plays move {move} against {_blackPlayer.Name}.");
                 _turn = false;
+                _gameTime -= _moveTime;
             }
             else if (_turn = false && _gameTime >0)
             {
                 Console.WriteLine($"{ _blackPlayer.Name} plays move {move} against {_whitePlayer.Name}.");
                 _turn = true;
+                _gameTime -= _moveTime;
+
             }
             else
             {

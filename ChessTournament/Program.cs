@@ -34,6 +34,16 @@ namespace ChessTournament
             table2.StartGame(10, 15);
             table3.StartGame(10, 15);
 
+            while (table1.Gametime > 0 && table2.Gametime > 0 && table3.Gametime > 0)
+            {
+                table1.PlayMove("Chess move ");
+                table2.PlayMove("classy move");
+                table3.PlayMove("excellent move");
+            }
+
+
+
+
         }
     }
 }
